@@ -27,7 +27,7 @@ void loop()
     int h=3;
     //Open a connection to the server
     HTTPClient http;
-    http.begin("http://localhost/EXPAI/Test.php");
+    http.begin("http://192.168.1.101/EXPAI/Script2.php");
     http.addHeader("Content-Type", "application/x-www-form-urlencoded");
     //format your POST request.
       int httpResponseCode = http.POST("temperature=" + String(t) +"& humidity=" + String(h));
